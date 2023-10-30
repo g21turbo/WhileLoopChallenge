@@ -5,15 +5,19 @@ public class Main {
 
         int number = 4;
         int finalNumber = 20;
+        int evenNumberCount = 0;
 
         while (number <= finalNumber) {
             number++;
+
             if (isEvenNumber(number)) {
+                evenNumberCount++;
                 System.out.println("Even number " + number);
             }
         }
+        System.out.println("There are " + evenNumberCount + " even numbers");
     }
-    
+
     public static boolean isEvenNumber(int number) {
 
         if (number % 2 == 0){
