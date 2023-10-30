@@ -9,7 +9,6 @@ public class Main {
 
         while (number <= finalNumber) {
             number++;
-
             if (isEvenNumber(number)) {
                 evenNumberCount++;
                 System.out.println("Even number " + number);
