@@ -10,7 +10,7 @@ public class Main {
 
         while (number <= finalNumber) {
             number++;
-            if (isEvenNumber(number)) {
+            if (!isEvenNumber(number)) {
                 oddNumberCount++;
                 continue;
             }
