@@ -6,15 +6,19 @@ public class Main {
         int number = 4;
         int finalNumber = 20;
         int evenNumberCount = 0;
+        int oddNumberCount = 0;
 
         while (number <= finalNumber) {
             number++;
             if (isEvenNumber(number)) {
-                evenNumberCount++;
-                System.out.println("Even number " + number);
+                oddNumberCount++;
+                continue;
             }
+            System.out.println("Even number " + number);
+            evenNumberCount++;
         }
         System.out.println("There are " + evenNumberCount + " even numbers");
+        System.out.println("There are " + oddNumberCount + " odd numbers");
     }
 
     public static boolean isEvenNumber(int number) {
