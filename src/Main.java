@@ -16,6 +16,9 @@ public class Main {
             }
             System.out.println("Even number " + number);
             evenNumberCount++;
+            if (evenNumberCount >= 5) {
+                break;
+            }
         }
         System.out.println("There are " + evenNumberCount + " even numbers");
         System.out.println("There are " + oddNumberCount + " odd numbers");
